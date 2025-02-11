@@ -7,7 +7,10 @@ OR
 Running the following command in your `bash` terminal
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/suryaanshrai/hijklmnop/refs/heads/main/run-wobot-todo.sh | bash
+curl -sSL https://raw.githubusercontent.com/suryaanshrai/hijklmnop/main/run-wobot-todo.sh | bash
 ```
 
 ### Requirements
+
+1. Docker
+2. A bash shell
