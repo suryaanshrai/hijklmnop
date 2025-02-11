@@ -7,7 +7,7 @@ OR
 Running the following command in your `bash` terminal
 
 ```bash
-curl -sSL ${link_to_script} | bash
+curl -sSL https://raw.githubusercontent.com/suryaanshrai/hijklmnop/refs/heads/main/run-wobot-todo.sh | bash
 ```
 
 ### Requirements
