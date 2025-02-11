@@ -1,7 +1,10 @@
 services:
   api:
     container_name: todo-api
-    image: suryaanshrai515/hijklmnop:latest
+    build: 
+      context: './api'
+    volumes:
+      - './api:/app'
     ports:
       - 8000:8000
     environment:
