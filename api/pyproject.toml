@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "todolist-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Suryaansh Rai <suryaanshrai@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.8"
+sqlalchemy = "^2.0.38"
+pymysql = "^1.1.1"
+uvicorn = "^0.34.0"
+alembic = "^1.14.1"
+cryptography = "^44.0.0"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+python-multipart = "^0.0.20"
+zxcvbn = "^4.4.28"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
