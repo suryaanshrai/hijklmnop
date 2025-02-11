@@ -11,6 +11,8 @@ services:
         condition: service_healthy
     networks:
       - todo-network
+    healthcheck:
+      test: "exit 0"
   
   db:
     container_name: todo-db
@@ -27,6 +29,15 @@ services:
     healthcheck:
       test: "exit 0"
   
+  ready:
+    image: busybox
+    container_name: ready-todo
+    command: wget -qO - https://raw.githubusercontent.com/suryaanshrai/hijklmnop/main/ready-todo.txt | cat
+    depends_on:
+      api:
+        condition: service_healthy
+
+
 networks:
   todo-network:
     name: todo-network
