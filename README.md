@@ -10,6 +10,10 @@ Running the following command in your `bash` terminal
 curl -sSL https://raw.githubusercontent.com/suryaanshrai/hijklmnop/main/run-wobot-todo.sh | bash
 ```
 
+Wait for a while during the intial setup.
+
+Use `docker compose up` for subsequent runs.
+
 ### Requirements
 
 1. Docker
